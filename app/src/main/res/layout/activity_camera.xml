@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.lilyanlefevre.camerademo.engine.EnginePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.lilyanlefevre.camerademo.blur.BlurredConstraintLayout
+        android:id="@+id/blurredLayout1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/blurredLayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="200dp"
+        android:layout_height="150dp" >
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="40sp"
+            android:textColor="#FF0000"
+            android:text="Blur 1"/>
+    </com.lilyanlefevre.camerademo.blur.BlurredConstraintLayout>
+
+    <com.lilyanlefevre.camerademo.blur.BlurredConstraintLayout
+        android:id="@+id/blurredLayout2"
+        app:layout_constraintStart_toEndOf="@id/blurredLayout1"
+        app:layout_constraintEnd_toStartOf="@id/blurredLayout3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="200dp"
+        android:layout_height="150dp" >
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="40sp"
+            android:textColor="#FF0000"
+            android:text="Blur 2"/>
+    </com.lilyanlefevre.camerademo.blur.BlurredConstraintLayout>
+
+    <com.lilyanlefevre.camerademo.blur.BlurredConstraintLayout
+        android:id="@+id/blurredLayout3"
+        app:layout_constraintStart_toEndOf="@id/blurredLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="200dp"
+        android:layout_height="150dp" >
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="40sp"
+            android:textColor="#FF0000"
+            android:text="Blur 3"/>
+    </com.lilyanlefevre.camerademo.blur.BlurredConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
