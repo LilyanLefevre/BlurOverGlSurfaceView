@@ -91,7 +91,12 @@ class BlurredConstraintLayout @JvmOverloads constructor(
         clipChildren = true
         clipToPadding = true
 
+
         val currentBitmap = bitmapProvider?.getCurrentBitmap() ?: return
+
+        if (x < 0f || y < 0f ||
+            x + width > currentBitmap.width || y + height > currentBitmap.height) return
+
         val croppedBitmap = Bitmap.createBitmap(
             currentBitmap, x.toInt(), y.toInt(), width, height
         )

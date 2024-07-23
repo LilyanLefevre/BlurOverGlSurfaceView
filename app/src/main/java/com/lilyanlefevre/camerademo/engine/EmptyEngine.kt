@@ -92,7 +92,8 @@ class EmptyEngine(
         GLES20.glViewport(0, 0, width, height)
     }
 
-    var currentBitmap: Bitmap? = null
+    private var currentBitmap: Bitmap? = null
+
     override fun onDrawFrame(gl: GL10) {
         if (surfaceTexture != null) {
             surfaceTexture!!.updateTexImage()
