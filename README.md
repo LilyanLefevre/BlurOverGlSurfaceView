@@ -32,7 +32,7 @@ In this example, the **BitmapProvider** is the GLSurfaceView.Renderer as it has 
 
 ## Limitation
 In its current implementation and on my Samsung tablet with 4Go RAM and a Samsung Exynos 9810 Octo-Core CPU, the background blur seems laggy. 
-This laggy effect increases with the number of **BlurredConstraintLayout** instances.
+This laggy effect increases with the number of **BlurredConstraintLayout** instances. However with my Samsung Galaxy Fold 4 with 12Go Ram and a Snapdragon 8+ Gen 1 it works fine (or least better! :D).
 
 ## Credits
 The boilerplate to use Camera2 and OpenGL comes from [Guamola's Camera-GLSurfaceView](https://github.com/gumaola/Camera-GLSurfaceView).
