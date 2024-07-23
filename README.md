@@ -10,6 +10,11 @@ https://github.com/user-attachments/assets/26cbc9c2-d19e-4368-97cc-78e558892867
 - Dynamic Blurring: Continuously updates the background with a blurred image of the content under the view.
 - Rounded Corners with Border: The blurred background has rounded corners and a customizable border.
 
+## Principle
+Each time a frame is rendered on the GLSurfaceView, a variable stores it as a Bitmap. The **BlurredConstraintLayout** access this 
+variable and extract only the part that is below it. The layout then apply a blur with RenderScript (it may be overkill, it's just for POC purpose) 
+and convert it to a drawable to be able to set it as the background of the layout.
+
 ## How to use
 - Just use it as any other layout in your .xml layout:
 ```xml
