@@ -2,6 +2,8 @@
 This demo application showcases a custom ConstraintLayout that blurs its background using a GLSurfaceView that shows a camera preview. 
 The layout dynamically updates to reflect the blurred view of the content behind it.
 
+https://github.com/user-attachments/assets/26cbc9c2-d19e-4368-97cc-78e558892867
+
 ## Features
 - Custom ConstraintLayout: **BlurredConstraintLayout** that creates a blurred effect based on the content behind it.
 - Camera Preview Integration: Uses a GLSurfaceView to display a camera feed.
